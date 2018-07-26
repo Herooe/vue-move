@@ -40,7 +40,7 @@ export default {
           } else if (parseInt(that.left) >= that.endLeft) {
             that.left = that.endLeft + 'px';
             that.success = true;
-            console.log('验证成功');
+            that.$emit('pass', 'pass');
             that.flag = false;
           } else {
             that.left = e.clientX - that.startX + 'px';
